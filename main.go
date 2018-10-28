@@ -144,7 +144,7 @@ func getItem(w http.ResponseWriter, r *http.Request) {
 }
 
 func welcomeHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Welcome to the shopping list")
+	fmt.Fprintf(w, "Welcome to the Shopping List")
 
 }
 
@@ -161,8 +161,4 @@ func init() {
 	r.HandleFunc("/items/", getAllItems).Methods("GET")
 
 	http.Handle("/", r)
-	// err := http.ListenAndServe("localhost:8080", nil)
-	// if err != nil {
-	// 	log.Fatal(err)
-	// }
 }
