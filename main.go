@@ -145,6 +145,7 @@ func getItem(w http.ResponseWriter, r *http.Request) {
 
 func welcomeHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Welcome to the Shopping List")
+	fmt.Fprintf(w, "Go to '/items' to see added items")
 
 }
 
