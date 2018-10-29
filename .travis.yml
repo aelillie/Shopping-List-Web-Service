@@ -1,7 +1,7 @@
 language: go
 sudo: false
-before_script:
-  - go vet ./...
+# before_script:
+#   - go vet ./...
 install:
   # Add Godeps dependencies to GOPATH and PATH
   - export GOPATH="${TRAVIS_BUILD_DIR}/Godeps/_workspace:$GOPATH"
