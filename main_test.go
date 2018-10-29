@@ -13,8 +13,8 @@ func TestDecodeItem(t *testing.T) {
 	price := float32(10)
 	s := fmt.Sprintf(`
 	{
-		"name" : %s,
-		"supermarket" : %s,
+		"name" : "%s",
+		"supermarket" : "%s",
 		"price": %f
 	}
 	`, name, supermarket, price)
